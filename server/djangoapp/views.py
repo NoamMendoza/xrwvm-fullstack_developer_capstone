@@ -1,4 +1,3 @@
-# Uncomment the required imports before adding the code
 
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
@@ -43,7 +42,7 @@ def login_user(request):
 # Create a `logout_request` view to handle sign out request
 def logout_request(request):
     logout(request) # Terminate user session
-    data = {"userName":""} # Return empty username
+    data = {"userName": ""} # Return empty username
     return JsonResponse(data)
 
 # Create a `registration` view to handle sign up request
@@ -69,13 +68,14 @@ def registration(request):
     if not username_exist:
         user = User.objects.create_user(username=username, first_name=first_name, last_name=last_name,password=password, email=email)
         login(request, user)
-        data = {"userName":username,"status":"Authenticated"}
+        data = {"userName": username,"status": "Authenticated"}
         return JsonResponse(data)
     else:
-        data = {"userName":username, "error": "Already Registered"}
+        data = {"userName": username, "error": "Already Registered"}
         return JsonResponse(data)
 
-#Update the `get_dealerships` render list of dealerships all by default, particular state if state is passed
+
+
 def get_dealerships(request, state="All"):
     if(state == "All"):
         endpoint = "/fetchDealers"
