@@ -1,6 +1,7 @@
 from django.db import models
-#from django.utils.timezone import now
+# from django.utils.timezone import now
 from django.core.validators import MaxValueValidator, MinValueValidator
+
 
 class CarMake(models.Model):
 
@@ -36,5 +37,6 @@ class CarModel(models.Model):
         ]
     )
     color = models.CharField(max_length=20, blank=True)
+    
     def __str__(self):
         return f"{self.car_make.name} {self.name} ({self.year})"
