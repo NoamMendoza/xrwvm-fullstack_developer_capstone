@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="stylesheet" href="/static/bootstrap.min.css">
+    </head>
+    <body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+            <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    
+        <div class="card" style="width: 80%; max-width: 800px;">
+            <div class="title">Get in Touch with Us</div>
+            <div class="row">
+                <div class="details">
+                    <p><strong>Address:</strong> 123 Car Street, Tech City</p>
+                    <p><strong>Email:</strong> support@dealership.com</p>
+                    <p><strong>Phone:</strong> +1 (555) 000-1234</p>
+                </div>
+                <div class="img_icon" style="padding: 20px; font-size: 24px;">
+                    ✉️
+                </div>
+            </div>
+        </div>
+    
+        <div class="form_panel" style="color: white; margin-bottom: 50px; style=background-color: #f8f9fa;">
+            <h2 style="margin-bottom: 20px;">Send us a Message</h2>
+            
+            <form style="display: flex; flex-direction: column; gap: 15px; padding: 20px;">
+                <div style="display: flex; flex-direction: column; text-align: left;">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                
+                <div style="display: flex; flex-direction: column; text-align: left;">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" placeholder="name@example.com">
+                </div>
+                
+                <div style="display: flex; flex-direction: column; text-align: left;">
+                    <label>Message</label>
+                    <textarea class="form-control" rows="4" placeholder="How can we help you?"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-info" style="margin-top: 10px; font-weight: bold;">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    
+    </div>
+    <body>
+</html>
